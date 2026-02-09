@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SynaptiQX 2050 – The world's most advanced AI-Powered Neural Education Platform. Holographic learning, adaptive AI tutors, and immersive neural classrooms.">
+    <meta name="keywords" content="AI education, neural learning, holographic classroom, 2050, adaptive learning, SynaptiQX">
+    <meta name="author" content="SynaptiQX Technologies">
+    <meta name="theme-color" content="#0a0a1a">
+    <meta property="og:title" content="SynaptiQX 2050 – AI Neural Education Platform">
+    <meta property="og:description" content="Experience the future of learning with holographic AI tutors, neural sync technology, and adaptive curriculum powered by quantum computing.">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <title>SynaptiQX 2050 – AI Neural Education Platform</title>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Fonts: Variable futuristic fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'orbitron': ['Orbitron', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                        'mono': ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        'neural': {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            200: '#c7d2fe',
+                            300: '#a5b4fc',
+                            400: '#818cf8',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            800: '#3730a3',
+                            900: '#312e81',
+                            950: '#1e1b4b',
+                        },
+                        'cyber': {
+                            blue: '#00f0ff',
+                            purple: '#b000ff',
+                            pink: '#ff006e',
+                            green: '#00ff88',
+                            orange: '#ff8800',
+                            gold: '#ffd700',
+                        },
+                        'dark': {
+                            bg: '#0a0a1a',
+                            card: 'rgba(15, 15, 35, 0.6)',
+                            surface: 'rgba(20, 20, 50, 0.4)',
+                        }
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
+                        'shimmer': 'shimmer 3s ease-in-out infinite',
+                        'rotate-slow': 'rotateSlow 20s linear infinite',
+                        'gradient-shift': 'gradientShift 8s ease infinite',
+                        'typing': 'typing 3.5s steps(40, end)',
+                        'wave': 'wave 2s ease-in-out infinite',
+                        'neural-pulse': 'neuralPulse 3s ease-in-out infinite',
+                        'scan-line': 'scanLine 4s linear infinite',
+                        'fade-up': 'fadeUp 0.8s ease-out forwards',
+                        'scale-in': 'scaleIn 0.6s ease-out forwards',
+                        'slide-right': 'slideRight 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { boxShadow: '0 0 20px rgba(0, 240, 255, 0.3)' },
+                            '50%': { boxShadow: '0 0 40px rgba(0, 240, 255, 0.6), 0 0 80px rgba(0, 240, 255, 0.2)' },
+                        },
+                        shimmer: {
+                            '0%': { backgroundPosition: '-200% center' },
+                            '100%': { backgroundPosition: '200% center' },
+                        },
+                        rotateSlow: {
+                            '0%': { transform: 'rotate(0deg)' },
+                            '100%': { transform: 'rotate(360deg)' },
+                        },
+                        gradientShift: {
+                            '0%, 100%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                        },
+                        wave: {
+                            '0%, 100%': { transform: 'scaleY(1)' },
+                            '50%': { transform: 'scaleY(1.5)' },
+                        },
+                        neuralPulse: {
+                            '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
+                            '50%': { opacity: '1', transform: 'scale(1.05)' },
+                        },
+                        scanLine: {
+                            '0%': { transform: 'translateY(-100%)' },
+                            '100%': { transform: 'translateY(100vh)' },
+                        },
+                        fadeUp: {
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        scaleIn: {
+                            '0%': { opacity: '0', transform: 'scale(0.8)' },
+                            '100%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        slideRight: {
+                            '0%': { opacity: '0', transform: 'translateX(-40px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' },
+                        },
+                    },
+                    backdropBlur: {
+                        'xs': '2px',
+                        '3xl': '64px',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+
+    <!-- Lottie Player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.4/dist/lottie-player.js" defer></script>
+</head>
+
+<body class="bg-[#0a0a1a] text-white font-inter overflow-x-hidden selection:bg-cyber-blue/30 selection:text-white">
+
+    <!-- ==================== LOADER SCREEN ==================== -->
+    <div id="loader-screen" class="fixed inset-0 z-[9999] flex items-center justify-center bg-[#0a0a1a]" role="status" aria-label="Loading application">
+        <div class="text-center">
+            <div class="relative w-32 h-32 mx-auto mb-8">
+                <!-- Outer ring -->
+                <div class="absolute inset-0 rounded-full border-2 border-cyber-blue/20 animate-rotate-slow"></div>
+                <!-- Middle ring -->
+                <div class="absolute inset-3 rounded-full border-2 border-cyber-purple/30 animate-rotate-slow" style="animation-direction: reverse; animation-duration: 15s;"></div>
+                <!-- Inner ring -->
+                <div class="absolute inset-6 rounded-full border-2 border-cyber-green/20 animate-rotate-slow" style="animation-duration: 10s;"></div>
+                <!-- Core -->
+                <div class="absolute inset-10 rounded-full bg-gradient-to-br from-cyber-blue/30 to-cyber-purple/30 animate-pulse-glow flex items-center justify-center backdrop-blur-sm">
+                    <span class="font-orbitron text-cyber-blue text-lg font-black">SQ</span>
+                </div>
+            </div>
+            <h2 class="font-orbitron text-xl text-white/80 tracking-[0.3em] mb-4">SYNAPTIQX</h2>
+            <div class="w-64 h-1 bg-white/10 rounded-full mx-auto overflow-hidden">
+                <div id="loader-bar" class="h-full bg-gradient-to-r from-cyber-blue via-cyber-purple to-cyber-pink rounded-full transition-all duration-300" style="width: 0%"></div>
+            </div>
+            <p id="loader-text" class="text-white/40 text-sm mt-3 font-mono">Initializing neural systems...</p>
+        </div>
+    </div>
+
+    <!-- ==================== PARTICLE CANVAS ==================== -->
+    <canvas id="particle-canvas" class="fixed inset-0 z-0 pointer-events-none" aria-hidden="true"></canvas>
+
+    <!-- ==================== THREE.JS BACKGROUND ==================== -->
+    <div id="three-container" class="fixed inset-0 z-0 pointer-events-none opacity-40" aria-hidden="true"></div>
+
+    <!-- ==================== SCAN LINE EFFECT ==================== -->
+    <div class="fixed inset-0 z-[1] pointer-events-none opacity-[0.03]" aria-hidden="true">
+        <div class="w-full h-[2px] bg-cyber-blue animate-scan-line"></div>
+    </div>
+
+    <!-- ==================== CURSOR GLOW ==================== -->
+    <div id="cursor-glow" class="fixed w-[400px] h-[400px] rounded-full pointer-events-none z-[2] opacity-0 transition-opacity duration-300" aria-hidden="true"
+         style="background: radial-gradient(circle, rgba(0,240,255,0.08) 0%, rgba(176,0,255,0.04) 40%, transparent 70%); transform: translate(-50%, -50%);">
+    </div>
+
+    <!-- ==================== FLOATING GLASS NAVIGATION ==================== -->
+    <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500" role="navigation" aria-label="Main navigation">
+        <div class="mx-4 mt-4 md:mx-8">
+            <div class="glass-nav rounded-2xl px-6 py-3 flex items-center justify-between max-w-7xl mx-auto">
+                <!-- Logo -->
+                <a href="#hero" class="flex items-center gap-3 group" aria-label="SynaptiQX Home">
+                    <div class="relative w-10 h-10 flex items-center justify-center">
+                        <div class="absolute inset-0 rounded-xl bg-gradient-to-br from-cyber-blue to-cyber-purple opacity-80 group-hover:opacity-100 transition-opacity"></div>
+                        <div class="absolute inset-0 rounded-xl animate-pulse-glow"></div>
+                        <span class="relative font-orbitron text-white font-black text-sm">SQ</span>
+                    </div>
+                    <div class="hidden sm:block">
+                        <span class="font-orbitron text-lg font-bold bg-gradient-to-r from-cyber-blue to-cyber-purple bg-clip-text text-transparent">SynaptiQX</span>
+                        <span class="block text-[10px] text-white/40 tracking-[0.25em] uppercase -mt-1">Neural Platform</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center gap-1" role="menubar">
+                    <a href="#hero" class="nav-link active" role="menuitem">Home</a>
+                    <a href="#dashboard" class="nav-link" role="menuitem">Dashboard</a>
+                    <a href="#courses" class="nav-link" role="menuitem">Courses</a>
+                    <a href="#ai-assistant" class="nav-link" role="menuitem">AI Tutor</a>
+                    <a href="#analytics" class="nav-link" role="menuitem">Analytics</a>
+                    <a href="#vr-preview" class="nav-link" role="menuitem">VR Lab</a>
+                </div>
+
+                <!-- Right Actions -->
+                <div class="flex items-center gap-3">
+                    <!-- Neural Sync Indicator -->
+                    <div class="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white/5 border border-white/10">
+                        <div class="w-2 h-2 rounded-full bg-cyber-green animate-pulse"></div>
+                        <span class="text-xs text-white/60 font-mono" id="neural-sync-status">Neural Sync: <span class="text-cyber-green">Active</span></span>
+                    </div>
+
+                    <!-- Biometric Login -->
+                    <button id="btn-biometric" class="magnetic-btn group relative px-4 py-2 rounded-xl overflow-hidden" aria-label="Biometric Login">
+                        <div class="absolute inset-0 bg-gradient-to-r from-cyber-blue to-cyber-purple opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute inset-[1px] bg-[#0a0a1a] rounded-[11px] group-hover:bg-dark-card transition-colors"></div>
+                        <span class="relative flex items-center gap-2 text-sm font-medium">
+                            <i class="fas fa-fingerprint text-cyber-blue group-hover:text-white transition-colors"></i>
+                            <span class="hidden sm:inline text-white/80 group-hover:text-white transition-colors">Login</span>
+                        </span>
+                    </button>
+
+                    <!-- CTA Button -->
+                    <button class="magnetic-btn relative px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyber-blue to-cyber-purple text-white font-semibold text-sm overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-r from-cyber-purple to-cyber-pink opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <span class="relative flex items-center gap-2">
+                            <i class="fas fa-brain"></i>
+                            Start Learning
+                        </span>
+                    </button>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors" aria-label="Toggle mobile menu" aria-expanded="false">
+                        <div class="w-5 h-4 flex flex-col justify-between">
+                            <span class="block w-full h-0.5 bg-white rounded transition-transform origin-center" id="menu-line-1"></span>
+                            <span class="block w-full h-0.5 bg-white rounded transition-opacity" id="menu-line-2"></span>
+                            <span class="block w-full h-0.5 bg-white rounded transition-transform origin-center" id="menu-line-3"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="lg:hidden hidden mt-2 rounded-2xl glass-panel p-4 max-w-7xl mx-auto" role="menu">
+                <div class="flex flex-col gap-2">
+                    <a href="#hero" class="mobile-nav-link active" role="menuitem"><i class="fas fa-home w-5"></i> Home</a>
+                    <a href="#dashboard" class="mobile-nav-link" role="menuitem"><i class="fas fa-chart-line w-5"></i> Dashboard</a>
+                    <a href="#courses" class="mobile-nav-link" role="menuitem"><i class="fas fa-graduation-cap w-5"></i> Courses</a>
+                    <a href="#ai-assistant" class="mobile-nav-link" role="menuitem"><i class="fas fa-robot w-5"></i> AI Tutor</a>
+                    <a href="#analytics" class="mobile-nav-link" role="menuitem"><i class="fas fa-chart-bar w-5"></i> Analytics</a>
+                    <a href="#vr-preview" class="mobile-nav-link" role="menuitem"><i class="fas fa-vr-cardboard w-5"></i> VR Lab</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main id="main-content">
+
+        <!-- ============ HERO SECTION ============ -->
+        <section id="hero" class="relative z-10 min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
+            <!-- Holographic Grid Background -->
+            <div class="absolute inset-0 z-0" aria-hidden="true">
+                <div class="holo-grid"></div>
+            </div>
+
+            <!-- Floating Orbs -->
+            <div class="absolute top-20 left-[10%] w-72 h-72 bg-cyber-blue/10 rounded-full blur-[100px] animate-float" aria-hidden="true"></div>
+            <div class="absolute bottom-20 right-[10%] w-96 h-96 bg-cyber-purple/10 rounded-full blur-[120px] animate-float" style="animation-delay: -3s;" aria-hidden="true"></div>
+            <div class="absolute top-[40%] left-[60%] w-64 h-64 bg-cyber-pink/8 rounded-full blur-[80px] animate-float" style="animation-delay: -1.5s;" aria-hidden="true"></div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <!-- Hero Text Content -->
+                    <div class="text-center lg:text-left hero-animate-in" data-animate="hero-text">
+                        <!-- Badge -->
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm mb-6">
+                            <div class="w-2 h-2 rounded-full bg-cyber-green animate-pulse"></div>
+                            <span class="text-xs font-mono text-white/60 tracking-wider uppercase">Platform v12.0 — Live in 2050</span>
+                        </div>
+
+                        <!-- Main Heading -->
+                        <h1 class="text-4xl sm:text-5xl lg:text-7xl font-orbitron font-black leading-[1.1] mb-6">
+                            <span class="block text-white">The Future of</span>
+                            <span class="block bg-gradient-to-r from-cyber-blue via-cyber-purple to-cyber-pink bg-clip-text text-transparent bg-[length:200%] animate-gradient-shift">Neural Learning</span>
+                            <span class="block text-white/90 text-3xl sm:text-4xl lg:text-5xl mt-2">is Here.</span>
+                        </h1>
+
+                        <!-- Subtext -->
+                        <p class="text-lg sm:text-xl text-white/50 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+                            Experience quantum-accelerated education powered by adaptive AI, holographic classrooms, and neural-sync technology that evolves with your mind.
+                        </p>
+
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
+                            <button class="magnetic-btn group relative px-8 py-4 rounded-2xl bg-gradient-to-r from-cyber-blue to-cyber-purple text-white font-bold text-lg overflow-hidden ripple-btn">
+                                <div class="absolute inset-0 bg-gradient-to-r from-cyber-purple to-cyber-pink opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <span class="relative flex items-center justify-center gap-3">
+                                    <i class="fas fa-brain"></i>
+                                    Begin Neural Session
+                                    <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                                </span>
+                            </button>
+                            <button class="magnetic-btn group relative px-8 py-4 rounded-2xl border border-white/20 text-white/80 font-semibold text-lg hover:bg-white/5 hover:border-white/30 transition-all overflow-hidden ripple-btn">
+                                <span class="relative flex items-center justify-center gap-3">
+                                    <i class="fas fa-play-circle text-cyber-blue"></i>
+                                    Watch Holo-Demo
+                                </span>
+                            </button>
+                        </div>
+
+                        <!-- Stats Row -->
+                        <div class="grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0">
+                            <div class="text-center lg:text-left">
+                                <div class="text-2xl sm:text-3xl font-orbitron font-black text-cyber-blue counter" data-target="2.4" data-suffix="M+">0</div>
+                                <div class="text-xs text-white/40 mt-1">Neural Learners</div>
+                            </div>
+                            <div class="text-center lg:text-left">
+                                <div class="text-2xl sm:text-3xl font-orbitron font-black text-cyber-purple counter" data-target="98.7" data-suffix="%">0</div>
+                                <div class="text-xs text-white/40 mt-1">Success Rate</div>
+                            </div>
+                            <div class="text-center lg:text-left">
+                                <div class="text-2xl sm:text-3xl font-orbitron font-black text-cyber-green counter" data-target="150" data-suffix="+">0</div>
+                                <div class="text-xs text-white/40 mt-1">AI Models</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Visual: Holographic Brain -->
+                    <div class="relative flex items-center justify-center hero-visual-animate-in" data-animate="hero-visual">
+                        <div class="relative w-full max-w-lg aspect-square">
+                            <!-- Outer Glow Ring -->
+                            <div class="absolute inset-0 rounded-full border border-cyber-blue/20 animate-rotate-slow"></div>
+                            <div class="absolute inset-4 rounded-full border border-cyber-purple/15 animate-rotate-slow" style="animation-direction: reverse; animation-duration: 25s;"></div>
+                            <div class="absolute inset-8 rounded-full border border-cyber-green/10 animate-rotate-slow" style="animation-duration: 30s;"></div>
+
+                            <!-- Central Hologram Display -->
+                            <div class="absolute inset-12 rounded-full glass-panel flex items-center justify-center overflow-hidden">
+                                <canvas id="hero-brain-canvas" class="w-full h-full" aria-label="Neural network visualization"></canvas>
+                            </div>
+
+                            <!-- Floating Data Points -->
+                            <div class="absolute top-[5%] right-[15%] glass-panel px-3 py-2 rounded-xl animate-float text-xs" style="animation-delay: -1s;">
+                                <span class="text-cyber-blue font-mono">IQ Enhancement</span>
+                                <div class="text-white font-bold">+47%</div>
+                            </div>
+                            <div class="absolute bottom-[10%] left-[5%] glass-panel px-3 py-2 rounded-xl animate-float text-xs" style="animation-delay: -3s;">
+                                <span class="text-cyber-green font-mono">Neural Sync</span>
+                                <div class="text-white font-bold">99.2%</div>
+                            </div>
+                            <div class="absolute top-[45%] left-[-5%] glass-panel px-3 py-2 rounded-xl animate-float text-xs" style="animation-delay: -2s;">
+                                <span class="text-cyber-purple font-mono">Active Nodes</span>
+                                <div class="text-white font-bold">12.4K</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-float z-10">
+                <span class="text-xs text-white/30 font-mono tracking-widest uppercase">Scroll to Explore</span>
+                <div class="w-6 h-10 rounded-full border-2 border-white/20 flex justify-center pt-2">
+                    <div class="w-1.5 h-3 rounded-full bg-cyber-blue animate-bounce"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ AI LEARNING DASHBOARD ============ -->
+        <section id="dashboard" class="relative z-10 py-24 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div class="text-center mb-16" data-animate="fade-up">
+                    <span class="inline-block px-4 py-1.5 rounded-full bg-cyber-blue/10 border border-cyber-blue/20 text-cyber-blue text-xs font-mono tracking-wider uppercase mb-4">Neural Dashboard</span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-orbitron font-black mb-4">
+                        Your <span class="bg-gradient-to-r from-cyber-blue to-cyber-purple bg-clip-text text-transparent">Learning Command Center</span>
+                    </h2>
+                    <p class="text-white/50 max-w-2xl mx-auto text-lg">Real-time cognitive analytics, adaptive progress tracking, and AI-driven insights — all in one neural interface.</p>
+                </div>
+
+                <!-- Dashboard Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8" data-animate="stagger-up">
+                    <!-- Stat Card 1: Neural Score -->
+                    <div class="glass-panel hover-tilt rounded-2xl p-6 border border-white/10 hover:border-cyber-blue/30 transition-all duration-500 group">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyber-blue/20 to-cyber-blue/5 flex items-center justify-center">
+                                <i class="fas fa-brain text-cyber-blue text-xl"></i>
+                            </div>
+                            <span class="text-xs font-mono text-cyber-green flex items-center gap-1"><i class="fas fa-arrow-up text-[10px]"></i> 12.5%</span>
+                        </div>
+                        <h3 class="text-sm text-white/50 mb-1">Neural Score</h3>
+                        <div class="text-3xl font-orbitron font-black text-white counter" data-target="947" data-suffix="">0</div>
+                        <div class="mt-3 h-1.5 bg-white/5 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-cyber-blue to-cyber-purple rounded-full progress-bar" data-width="94.7%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Stat Card 2: Courses Active -->
+                    <div class="glass-panel hover-tilt rounded-2xl p-6 border border-white/10 hover:border-cyber-purple/30 transition-all duration-500 group">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyber-purple/20 to-cyber-purple/5 flex items-center justify-center">
+                                <i class="fas fa-book-open text-cyber-purple text-xl"></i>
+                            </div>
+                            <span class="text-xs font-mono text-cyber-green flex items-center gap-1"><i class="fas fa-arrow-up text-[10px]"></i> 3 new</span>
+                        </div>
+                        <h3 class="text-sm text-white/50 mb-1">Active Courses</h3>
+                        <div class="text-3xl font-orbitron font-black text-white counter" data-target="24" data-suffix="">0</div>
+                        <div class="mt-3 h-1.5 bg-white/5 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-cyber-purple to-cyber-pink rounded-full progress-bar" data-width="80%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Stat Card 3: Study Hours -->
+                    <div class="glass-panel hover-tilt rounded-2xl p-6 border border-white/10 hover:border-cyber-green/30 transition-all duration-500 group">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyber-green/20 to-cyber-green/5 flex items-center justify-center">
+                                <i class="fas fa-clock text-cyber-green text-xl"></i>
+                            </div>
+                            <span class="text-xs font-mono text-cyber-green flex items-center gap-1"><i class="fas fa-arrow-up text-[10px]"></i> 8.3%</span>
+                        </div>
+                        <h3 class="text-sm text-white/50 mb-1">Neural Hours</h3>
+                        <div class="text-3xl font-orbitron font-black text-white counter" data-target="1847" data-suffix="h">0</div>
+                        <div class="mt-3 h-1.5 bg-white/5 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-cyber-green to-cyber-blue rounded-full progress-bar" data-width="73%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Stat Card 4: AI Interactions -->
+                    <div class="glass-panel hover-tilt rounded-2xl p-6 border border-white/10 hover:border-cyber-orange/30 transition-all duration-500 group">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyber-orange/20 to-cyber-orange/5 flex items-center justify-center">
+                                <i class="fas fa-robot text-cyber-orange text-xl"></i>
+                            </div>
+                            <span class="text-xs font-mono text-cyber-green flex items-center gap-1"><i class="fas fa-arrow-up text-[10px]"></i> 22%</span>
+                        </div>
+                        <h3 class="text-sm text-white/50 mb-1">AI Sessions</h3>
+                        <div class="text-3xl font-orbitron font-black text-white counter" data-target="5621" data-suffix="">0</div>
+                        <div class="mt-3 h-1.5 bg-white/5 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-cyber-orange to-yellow-500 rounded-full progress-bar" data-width="88%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dashboard Charts Row -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6" data-animate="stagger-up">
+                    <!-- Learning Progress Chart -->
+                    <div class="lg:col-span-2 glass-panel rounded-2xl border border-white/10 overflow-hidden">
+                        <div class="px-6 py-4 border-b border-white/5 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-cyber-blue/10 flex items-center justify-center">
+                                    <i class="fas fa-chart-line text-cyber-blue text-sm"></i>
+                                </div>
+                                <h3 class="text-sm font-semibold text-white/80">Neural Learning Progress</h3>
+                            </div>
+                            <div class="flex gap-2">
+                                <button class="chart-period-btn active text-xs px-3 py-1 rounded-lg" data-period="week">Week</button>
+                                <button class="chart-period-btn text-xs px-3 py-1 rounded-lg" data-period="month">Month</button>
+                                <button class="chart-period-btn text-xs px-3 py-1 rounded-lg" data-period="year">Year</button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <canvas id="learning-progress-chart" height="250" aria-label="Learning progress chart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Cognitive Performance Radar -->
+                    <div class="glass-panel rounded-2xl border border-white/10 overflow-hidden">
+                        <div class="px-6 py-4 border-b border-white/5 flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-cyber-purple/10 flex items-center justify-center">
+                                <i class="fas fa-project-diagram text-cyber-purple text-sm"></i>
+                            </div>
+                            <h3 class="text-sm font-semibold text-white/80">Cognitive Profile</h3>
+                        </div>
+                        <div class="p-6">
+                            <canvas id="cognitive-radar-chart" height="250" aria-label="Cognitive performance radar chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emotion & Skill Row -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6" data-animate="stagger-up">
+                    <!-- Emotion Feedback Meter -->
+                    <div class="glass-panel rounded-2xl p-6 border border-white/10">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-8 h-8 rounded-lg bg-cyber-pink/10 flex items-center justify-center">
+                                <i class="fas fa-heart-pulse text-cyber-pink text-sm"></i>
+                            </div>
+                            <h3 class="text-sm font-semibold text-white/80">Emotion Feedback</h3>
+                        </div>
+                        <div class="space-y-3" id="emotion-meters">
+                            <div class="emotion-bar" data-emotion="focus" data-value="87">
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-white/60"><i class="fas fa-crosshairs mr-1"></i> Focus</span>
+                                    <span class="text-cyber-blue font-mono">87%</span>
+                                </div>
+                                <div class="h-2 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full transition-all duration-1000" style="width: 0%"></div></div>
+                            </div>
+                            <div class="emotion-bar" data-emotion="engagement" data-value="92">
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-white/60"><i class="fas fa-fire mr-1"></i> Engagement</span>
+                                    <span class="text-cyber-green font-mono">92%</span>
+                                </div>
+                                <div class="h-2 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-green-500 to-emerald-500 rounded-full transition-all duration-1000" style="width: 0%"></div></div>
+                            </div>
+                            <div class="emotion-bar" data-emotion="curiosity" data-value="78">
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-white/60"><i class="fas fa-lightbulb mr-1"></i> Curiosity</span>
+                                    <span class="text-cyber-purple font-mono">78%</span>
+                                </div>
+                                <div class="h-2 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-purple-500 to-violet-500 rounded-full transition-all duration-1000" style="width: 0%"></div></div>
+                            </div>
+                            <div class="emotion-bar" data-emotion="confidence" data-value="84">
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-white/60"><i class="fas fa-shield-halved mr-1"></i> Confidence</span>
+                                    <span class="text-cyber-orange font-mono">84%</span>
+                                </div>
+                                <div class="h-2 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-full transition-all duration-1000" style="width: 0%"></div></div>
+                            </div>
+                            <div class="emotion-bar" data-emotion="calm" data-value="71">
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-white/60"><i class="fas fa-spa mr-1"></i> Calm</span>
+                                    <span class="text-cyber-pink font-mono">71%</span>
+                                </div>
+                                <div class="h-2 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-pink-500 to-rose-500 rounded-full transition-all duration-1000" style="width: 0%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Learning Path -->
+                    <div class="glass-panel rounded-2xl p-6 border border-white/10">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-8 h-8 rounded-lg bg-cyber-green/10 flex items-center justify-center">
+                                <i class="fas fa-route text-cyber-green text-sm"></i>
+                            </div>
+                            <h3 class="text-sm font-semibold text-white/80">Adaptive Learning Path</h3>
+                        </div>
+                        <div class="relative" id="learning-path">
+                            <!-- Path Line -->
+                            <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-cyber-blue via-cyber-purple to-cyber-green/30"></div>
+                            <!-- Path Nodes -->
+                            <div class="space-y-5">
+                                <div class="relative pl-10 group">
+                                    <div class="absolute left-2.5 top-1 w-3 h-3 rounded-full bg-cyber-blue shadow-[0_0_10px_rgba(0,240,255,0.5)]"></div>
+                                    <div class="text-xs text-white/40 font-mono">Completed</div>
+                                    <div class="text-sm text-white/90 font-medium">Quantum Computing Basics</div>
+                                </div>
+                                <div class="relative pl-10 group">
+                                    <div class="absolute left-2.5 top-1 w-3 h-3 rounded-full bg-cyber-blue shadow-[0_0_10px_rgba(0,240,255,0.5)]"></div>
+                                    <div class="text-xs text-white/40 font-mono">Completed</div>
+                                    <div class="text-sm text-white/90 font-medium">Neural Network Architecture</div>
+                                </div>
+                                <div class="relative pl-10 group">
+                                    <div class="absolute left-2.5 top-1 w-3 h-3 rounded-full bg-cyber-purple animate-pulse shadow-[0_0_10px_rgba(176,0,255,0.5)]"></div>
+                                    <div class="text-xs text-cyber-purple font-mono">In Progress — 67%</div>
+                                    <div class="text-sm text-white font-medium">Advanced AI Ethics</div>
+                                </div>
+                                <div class="relative pl-10 group">
+                                    <div class="absolute left-2.5 top-1 w-3 h-3 rounded-full bg-white/20 border border-white/30"></div>
+                                    <div class="text-xs text-white/30 font-mono">Locked</div>
+                                    <div class="text-sm text-white/40 font-medium">Holographic Data Systems</div>
+                                </div>
+                                <div class="relative pl-10 group">
+                                    <div class="absolute left-2.5 top-1 w-3 h-3 rounded-full bg-white/10 border border-white/20"></div>
+                                    <div class="text-xs text-white/20 font-mono">Locked</div>
+                                    <div class="text-sm text-white/30 font-medium">Neural-Machine Interface</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Simulation -->
+                    <div class="glass-panel rounded-2xl p-6 border border-white/10">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-8 h-8 rounded-lg bg-cyber-orange/10 flex items-center justify-center">
+                                <i class="fas fa-dna text-cyber-orange text-sm"></i>
+                            </div>
+                            <h3 class="text-sm font-semibold text-white/80">Skill Simulation</h3>
+                        </div>
+                        <div class="space-y-4" id="skill-simulation">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500/20 to-blue-500/5 flex items-center justify-center text-blue-400 text-sm">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex justify-between text-xs mb-1">
+                                        <span class="text-white/70">Quantum Coding</span>
+                                        <span class="text-white/50 font-mono">Lvl 8</span>
+                                    </div>
+                                    <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
+                                        <div class="h-full bg-blue-500 rounded-full progress-bar" data-width="82%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500/20 to-purple-500/5 flex items-center justify-center text-purple-400 text-sm">
+                                    <i class="fas fa-microchip"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex justify-between text-xs mb-1">
+                                        <span class="text-white/70">Neural Design</span>
+                                        <span class="text-white/50 font-mono">Lvl 7</span>
+                                    </div>
+                                    <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
+                                        <div class="h-full bg-purple-500 rounded-full progress-bar" data-width="71%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-green-500/20 to-green-500/5 flex items-center justify-center text-green-400 text-sm">
+                                    <i class="fas fa-shield-virus"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex justify-between text-xs mb-1">
+                                        <span class="text-white/70">Cyber Security</span>
+                                        <span class="text-white/50 font-mono">Lvl 6</span>
+                                    </div>
+                                    <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
+                                        <div class="h-full bg-green-500 rounded-full progress-bar" data-width="65%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500/20 to-orange-500/5 flex items-center justify-center text-orange-400 text-sm">
+                                    <i class="fas fa-atom"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex justify-between text-xs mb-1">
+                                        <span class="text-white/70">Quantum Physics</span>
+                                        <span class="text-white/50 font-mono">Lvl 5</span>
+                                    </div>
+                                    <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
+                                        <div class="h-full bg-orange-500 rounded-full progress-bar" data-width="54%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500/20 to-pink-500/5 flex items-center justify-center text-pink-400 text-sm">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex justify-between text-xs mb-1">
+                                        <span class="text-white/70">Holo UI Design</span>
+                                        <span class="text-white/50 font-mono">Lvl 9</span>
+                                    </div>
+                                    <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
+                                        <div class="h-full bg-pink-500 rounded-full progress-bar" data-width="91%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ INTERACTIVE COURSE GRID ============ -->
+        <section id="courses" class="relative z-10 py-24 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div class="text-center mb-16" data-animate="fade-up">
+                    <span class="inline-block px-4 py-1.5 rounded-full bg-cyber-purple/10 border border-cyber-purple/20 text-cyber-purple text-xs font-mono tracking-wider uppercase mb-4">Course Catalog</span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-orbitron font-black mb-4">
+                        Explore <span class="bg-gradient-to-r from-cyber-purple to-cyber-pink bg-clip-text text-transparent">Neural Courses</span>
+                    </h2>
+                    <p class="text-white/50 max-w-2xl mx-auto text-lg">AI-curated courses adapted to your cognitive profile. Each module evolves with your learning patterns.</p>
+                </div>
+
+                <!-- Course Filter Tabs -->
+                <div class="flex flex-wrap justify-center gap-2 mb-12" data-animate="fade-up" role="tablist">
+                    <button class="course-filter-btn active" data-filter="all" role="tab" aria-selected="true">All Courses</button>
+                    <button class="course-filter-btn" data-filter="ai" role="tab" aria-selected="false">AI & ML</button>
+                    <button class="course-filter-btn" data-filter="quantum" role="tab" aria-selected="false">Quantum</button>
+                    <button class="course-filter-btn" data-filter="neuro" role="tab" aria-selected="false">Neuroscience</button>
+                    <button class="course-filter-btn" data-filter="cyber" role="tab" aria-selected="false">Cyber Security</button>
+                    <button class="course-filter-btn" data-filter="design" role="tab" aria-selected="false">Holo Design</button>
+                </div>
+
+                <!-- Course Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="course-grid" data-animate="stagger-up">
+                    <!-- Course cards rendered by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ AI ASSISTANT PANEL ============ -->
+        <section id="ai-assistant" class="relative z-10 py-24 overflow-hidden">
+            <!-- Ambient Glow -->
+            <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyber-purple/5 rounded-full blur-[150px]"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <!-- Section Header -->
+                <div class="text-center mb-16" data-animate="fade-up">
+                    <span class="inline-block px-4 py-1.5 rounded-full bg-cyber-green/10 border border-cyber-green/20 text-cyber-green text-xs font-mono tracking-wider uppercase mb-4">AI Neural Tutor</span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-orbitron font-black mb-4">
+                        Meet <span class="bg-gradient-to-r from-cyber-green to-cyber-blue bg-clip-text text-transparent">ARIA</span>
+                    </h2>
+                    <p class="text-white/50 max-w-2xl mx-auto text-lg">Your personal AI tutor with emotional intelligence, voice interaction, and adaptive teaching — available 24/7.</p>
+                </div>
+
+                <div class="grid lg:grid-cols-5 gap-8">
+                    <!-- AI Avatar -->
+                    <div class="lg:col-span-2 flex flex-col items-center" data-animate="fade-up">
+                        <div class="relative w-64 h-64 mb-6">
+                            <!-- Avatar Ring -->
+                            <div class="absolute inset-0 rounded-full border-2 border-cyber-green/30 animate-rotate-slow"></div>
+                            <div class="absolute inset-3 rounded-full border border-cyber-blue/20 animate-rotate-slow" style="animation-direction: reverse;"></div>
+
+                            <!-- Avatar Core -->
+                            <div class="absolute inset-6 rounded-full glass-panel overflow-hidden flex items-center justify-center" id="ai-avatar-container">
+                                <div id="ai-avatar" class="relative w-full h-full flex items-center justify-center">
+                                    <!-- Animated face SVG -->
+                                    <svg viewBox="0 0 200 200" class="w-3/4 h-3/4" id="ai-face">
+                                        <!-- Head glow -->
+                                        <circle cx="100" cy="100" r="80" fill="none" stroke="url(#avatarGradient)" stroke-width="2" opacity="0.5"/>
+                                        <!-- Eyes -->
+                                        <g id="ai-eyes">
+                                            <ellipse cx="72" cy="90" rx="12" ry="12" fill="none" stroke="#00f0ff" stroke-width="2" class="ai-eye-left"/>
+                                            <ellipse cx="128" cy="90" rx="12" ry="12" fill="none" stroke="#00f0ff" stroke-width="2" class="ai-eye-right"/>
+                                            <circle cx="72" cy="90" r="4" fill="#00f0ff" class="ai-pupil-left"/>
+                                            <circle cx="128" cy="90" r="4" fill="#00f0ff" class="ai-pupil-right"/>
+                                        </g>
+                                        <!-- Mouth -->
+                                        <path id="ai-mouth" d="M 75 130 Q 100 145 125 130" fill="none" stroke="#00f0ff" stroke-width="2" stroke-linecap="round"/>
+                                        <!-- Neural connections -->
+                                        <g opacity="0.3" class="ai-neural-lines">
+                                            <line x1="60" y1="50" x2="40" y2="30" stroke="#00f0ff" stroke-width="1"/>
+                                            <line x1="140" y1="50" x2="160" y2="30" stroke="#b000ff" stroke-width="1"/>
+                                            <line x1="50" y1="120" x2="25" y2="140" stroke="#00ff88" stroke-width="1"/>
+                                            <line x1="150" y1="120" x2="175" y2="140" stroke="#00f0ff" stroke-width="1"/>
+                                            <circle cx="40" cy="30" r="3" fill="#00f0ff"/>
+                                            <circle cx="160" cy="30" r="3" fill="#b000ff"/>
+                                            <circle cx="25" cy="140" r="3" fill="#00ff88"/>
+                                            <circle cx="175" cy="140" r="3" fill="#00f0ff"/>
+                                        </g>
+                                        <defs>
+                                            <linearGradient id="avatarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#00f0ff"/>
+                                                <stop offset="50%" stop-color="#b000ff"/>
+                                                <stop offset="100%" stop-color="#00ff88"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Status Indicator -->
+                            <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel border border-white/10">
+                                <div class="w-2 h-2 rounded-full animate-pulse" id="ai-status-dot" style="background: #00ff88;"></div>
+                                <span class="text-xs font-mono text-white/60" id="ai-status-text">Idle</span>
+                            </div>
+                        </div>
+
+                        <!-- Voice Controls -->
+                        <div class="flex items-center gap-4 mt-4">
+                            <button id="btn-mic" class="magnetic-btn w-14 h-14 rounded-full glass-panel border border-white/10 flex items-center justify-center hover:border-cyber-green/30 transition-all group" aria-label="Toggle microphone">
+                                <i class="fas fa-microphone text-white/60 group-hover:text-cyber-green transition-colors text-lg"></i>
+                            </button>
+                            <div class="flex gap-0.5 items-end h-8" id="voice-waveform" aria-label="Audio waveform visualization">
+                                <!-- Waveform bars generated by JS -->
+                            </div>
+                            <button id="btn-speaker" class="magnetic-btn w-14 h-14 rounded-full glass-panel border border-white/10 flex items-center justify-center hover:border-cyber-blue/30 transition-all group" aria-label="Toggle speaker">
+                                <i class="fas fa-volume-high text-white/60 group-hover:text-cyber-blue transition-colors text-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Chat Interface -->
+                    <div class="lg:col-span-3 glass-panel rounded-2xl border border-white/10 flex flex-col h-[500px]" data-animate="fade-up">
+                        <!-- Chat Header -->
+                        <div class="px-6 py-4 border-b border-white/5 flex items-center justify-between flex-shrink-0">
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-cyber-green to-cyber-blue flex items-center justify-center">
+                                    <i class="fas fa-robot text-white text-xs"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-semibold text-white/90">ARIA — Neural Tutor v12</h3>
+                                    <span class="text-xs text-cyber-green font-mono">Online • Response: 0.003ms</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-2">
+                                <button class="p-2 rounded-lg hover:bg-white/5 transition-colors text-white/40 hover:text-white/70" aria-label="Clear chat">
+                                    <i class="fas fa-trash-can text-xs"></i>
+                                </button>
+                                <button class="p-2 rounded-lg hover:bg-white/5 transition-colors text-white/40 hover:text-white/70" aria-label="Settings">
+                                    <i class="fas fa-gear text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Chat Messages -->
+                        <div class="flex-1 overflow-y-auto p-6 space-y-4 scroll-smooth" id="chat-messages">
+                            <!-- AI Welcome Message -->
+                            <div class="flex gap-3">
+                                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-cyber-green to-cyber-blue flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-robot text-white text-xs"></i>
+                                </div>
+                                <div class="glass-panel rounded-2xl rounded-tl-sm p-4 max-w-[80%] border border-white/5">
+                                    <p class="text-sm text-white/80">Hello! I'm ARIA, your personal neural learning assistant. I can help you with course recommendations, concept explanations, study planning, and real-time tutoring. How can I assist your learning journey today?</p>
+                                    <span class="text-[10px] text-white/30 mt-2 block font-mono">Today, 09:42 AM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Chat Input -->
+                        <div class="p-4 border-t border-white/5 flex-shrink-0">
+                            <div class="flex gap-3">
+                                <div class="flex-1 relative">
+                                    <input type="text" id="chat-input" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 pr-12 text-sm text-white placeholder-white/30 focus:outline-none focus:border-cyber-blue/50 focus:bg-white/[0.07] transition-all" placeholder="Ask ARIA anything..." aria-label="Chat message input">
+                                    <button class="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-lg hover:bg-white/5 transition-colors text-white/30 hover:text-cyber-blue" aria-label="Attach file">
+                                        <i class="fas fa-paperclip text-xs"></i>
+                                    </button>
+                                </div>
+                                <button id="btn-send-chat" class="magnetic-btn px-5 py-3 rounded-xl bg-gradient-to-r from-cyber-green to-cyber-blue text-white font-semibold text-sm hover:shadow-[0_0_20px_rgba(0,240,255,0.3)] transition-shadow" aria-label="Send message">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                            <!-- Quick Actions -->
+                            <div class="flex gap-2 mt-3 flex-wrap">
+                                <button class="quick-action-btn" data-message="Recommend a course for me">
+                                    <i class="fas fa-wand-magic-sparkles"></i> Recommend Course
+                                </button>
+                                <button class="quick-action-btn" data-message="Explain quantum computing simply">
+                                    <i class="fas fa-atom"></i> Explain Concept
+                                </button>
+                                <button class="quick-action-btn" data-message="Create a study plan for this week">
+                                    <i class="fas fa-calendar"></i> Study Plan
+                                </button>
+                                <button class="quick-action-btn" data-message="Run a diagnostic on my progress">
+                                    <i class="fas fa-stethoscope"></i> Diagnostics
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SMART ADVERTISEMENT ZONE ============ -->
+        <section id="ad-zone" class="relative z-10 py-20 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="relative glass-panel rounded-3xl border border-white/10 overflow-hidden" data-animate="fade-up">
+                    <!-- Background Gradient -->
+                    <div class="absolute inset-0 bg-gradient-to-r from-cyber-blue/10 via-cyber-purple/10 to-cyber-pink/10" aria-hidden="true"></div>
+                    <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSA2MCAwIEwgMCAwIDAgNjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-50" aria-hidden="true"></div>
+
+                    <div class="relative px-8 py-12 sm:px-12 sm:py-16 flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+                        <div class="flex-1 text-center lg:text-left">
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyber-gold/10 border border-cyber-gold/20 text-cyber-gold text-xs font-mono tracking-wider mb-4">
+                                <i class="fas fa-crown"></i> PREMIUM NEURAL PLAN
+                            </div>
+                            <h3 class="text-2xl sm:text-3xl lg:text-4xl font-orbitron font-black text-white mb-4">
+                                Unlock <span class="text-cyber-gold">Unlimited</span> Neural Power
+                            </h3>
+                            <p class="text-white/50 text-lg max-w-xl mb-6">Get access to 500+ quantum courses, priority AI tutoring, VR holographic classrooms, and real-time neural sync for an unmatched learning experience.</p>
+                            <div class="flex flex-wrap gap-3 justify-center lg:justify-start mb-6">
+                                <span class="inline-flex items-center gap-2 text-sm text-white/60"><i class="fas fa-check-circle text-cyber-green"></i> Unlimited AI Sessions</span>
+                                <span class="inline-flex items-center gap-2 text-sm text-white/60"><i class="fas fa-check-circle text-cyber-green"></i> VR Classrooms</span>
+                                <span class="inline-flex items-center gap-2 text-sm text-white/60"><i class="fas fa-check-circle text-cyber-green"></i> Neural Sync Pro</span>
+                                <span class="inline-flex items-center gap-2 text-sm text-white/60"><i class="fas fa-check-circle text-cyber-green"></i> Priority Support</span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+                                <button class="magnetic-btn px-8 py-4 rounded-2xl bg-gradient-to-r from-cyber-gold to-amber-500 text-black font-bold text-lg hover:shadow-[0_0_30px_rgba(255,215,0,0.3)] transition-all ripple-btn">
+                                    <i class="fas fa-crown mr-2"></i> Upgrade to Premium
+                                </button>
+                                <div class="text-center">
+                                    <span class="text-3xl font-orbitron font-black text-white">$49</span>
+                                    <span class="text-white/40 text-sm">/month</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Ad Visual -->
+                        <div class="flex-shrink-0 relative">
+                            <div class="w-48 h-48 sm:w-64 sm:h-64 relative">
+                                <div class="absolute inset-0 rounded-full bg-gradient-to-br from-cyber-gold/20 to-amber-500/10 animate-pulse-glow"></div>
+                                <div class="absolute inset-4 rounded-full glass-panel flex items-center justify-center">
+                                    <i class="fas fa-gem text-5xl sm:text-6xl text-cyber-gold animate-float"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ VR CLASSROOM PREVIEW ============ -->
+        <section id="vr-preview" class="relative z-10 py-24 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div class="text-center mb-16" data-animate="fade-up">
+                    <span class="inline-block px-4 py-1.5 rounded-full bg-cyber-pink/10 border border-cyber-pink/20 text-cyber-pink text-xs font-mono tracking-wider uppercase mb-4">Immersive Learning</span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-orbitron font-black mb-4">
+                        <span class="bg-gradient-to-r from-cyber-pink to-cyber-purple bg-clip-text text-transparent">VR Neural</span> Classroom
+                    </h2>
+                    <p class="text-white/50 max-w-2xl mx-auto text-lg">Step into holographic learning environments rendered in real-time with quantum processing power.</p>
+                </div>
+
+                <!-- VR Environment Selector Tabs -->
+                <div class="flex flex-wrap justify-center gap-3 mb-8" data-animate="fade-up">
+                    <button class="vr-env-btn active magnetic-btn px-5 py-2.5 rounded-xl glass-panel border border-cyber-pink/30 text-sm font-mono transition-all hover:scale-105" data-env="classroom" aria-label="Switch to Classroom environment">
+                        <i class="fas fa-chalkboard-teacher mr-2 text-cyber-pink"></i>
+                        <span class="text-white/80">Neural Classroom</span>
+                    </button>
+                    <button class="vr-env-btn magnetic-btn px-5 py-2.5 rounded-xl glass-panel border border-white/10 text-sm font-mono transition-all hover:scale-105" data-env="space" aria-label="Switch to Space Lab environment">
+                        <i class="fas fa-rocket mr-2 text-cyber-blue"></i>
+                        <span class="text-white/60">Space Station Lab</span>
+                    </button>
+                    <button class="vr-env-btn magnetic-btn px-5 py-2.5 rounded-xl glass-panel border border-white/10 text-sm font-mono transition-all hover:scale-105" data-env="ocean" aria-label="Switch to Ocean Lab environment">
+                        <i class="fas fa-water mr-2 text-cyan-400"></i>
+                        <span class="text-white/60">Deep Ocean Lab</span>
+                    </button>
+                    <button class="vr-env-btn magnetic-btn px-5 py-2.5 rounded-xl glass-panel border border-white/10 text-sm font-mono transition-all hover:scale-105" data-env="molecular" aria-label="Switch to Molecular Lab environment">
+                        <i class="fas fa-atom mr-2 text-cyber-green"></i>
+                        <span class="text-white/60">Molecular Lab</span>
+                    </button>
+                </div>
+
+                <!-- VR Main Container -->
+                <div class="relative max-w-6xl mx-auto" data-animate="scale-in">
+                    <!-- VR Preview Canvas -->
+                    <div id="vr-viewport" class="relative glass-panel rounded-3xl border border-white/10 overflow-hidden aspect-video">
+                        <canvas id="vr-canvas" class="w-full h-full cursor-crosshair" aria-label="VR Classroom preview simulation"></canvas>
+
+                        <!-- Top-left: Live Stats Panel -->
+                        <div id="vr-stats-panel" class="absolute top-4 left-4 glass-panel rounded-xl border border-white/10 p-3 min-w-[180px] vr-panel-animate">
+                            <div class="flex items-center gap-2 mb-2 border-b border-white/5 pb-2">
+                                <div class="w-2 h-2 rounded-full bg-cyber-green animate-pulse"></div>
+                                <span class="text-[10px] font-mono text-cyber-green uppercase tracking-widest">Live Telemetry</span>
+                            </div>
+                            <div class="space-y-1.5">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-[10px] font-mono text-white/40">FPS</span>
+                                    <span id="vr-fps" class="text-xs font-mono text-cyber-blue font-bold">60</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-[10px] font-mono text-white/40">OBJECTS</span>
+                                    <span id="vr-obj-count" class="text-xs font-mono text-cyber-purple font-bold">8</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-[10px] font-mono text-white/40">PARTICLES</span>
+                                    <span id="vr-particle-count" class="text-xs font-mono text-cyber-pink font-bold">50</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-[10px] font-mono text-white/40">GPU LOAD</span>
+                                    <span id="vr-gpu" class="text-xs font-mono text-cyber-orange font-bold">34%</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-[10px] font-mono text-white/40">STUDENTS</span>
+                                    <span id="vr-students" class="text-xs font-mono text-cyber-gold font-bold">24</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Top-right: Active Environment Badge -->
+                        <div class="absolute top-4 right-4 glass-panel rounded-xl border border-cyber-pink/20 px-4 py-2 vr-panel-animate" style="animation-delay: 0.1s">
+                            <div class="flex items-center gap-2">
+                                <i id="vr-env-icon" class="fas fa-chalkboard-teacher text-cyber-pink text-sm"></i>
+                                <div>
+                                    <div id="vr-env-name" class="text-xs font-mono text-white/80 font-bold">NEURAL CLASSROOM</div>
+                                    <div class="text-[9px] font-mono text-white/30">ZONE A7 · SECTOR 12</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left Sidebar: Object Spawner -->
+                        <div id="vr-spawner" class="absolute top-1/2 -translate-y-1/2 left-4 glass-panel rounded-xl border border-white/10 p-2 flex flex-col gap-2 vr-panel-animate" style="animation-delay: 0.2s">
+                            <span class="text-[8px] font-mono text-white/30 text-center uppercase tracking-widest mb-1">Spawn</span>
+                            <button class="vr-spawn-btn group p-2 rounded-lg hover:bg-cyber-blue/20 transition-all" data-shape="cube" aria-label="Spawn cube" title="Cube">
+                                <i class="fas fa-cube text-white/40 group-hover:text-cyber-blue transition-colors"></i>
+                            </button>
+                            <button class="vr-spawn-btn group p-2 rounded-lg hover:bg-cyber-purple/20 transition-all" data-shape="sphere" aria-label="Spawn sphere" title="Sphere">
+                                <i class="fas fa-circle text-white/40 group-hover:text-cyber-purple transition-colors"></i>
+                            </button>
+                            <button class="vr-spawn-btn group p-2 rounded-lg hover:bg-cyber-pink/20 transition-all" data-shape="pyramid" aria-label="Spawn pyramid" title="Pyramid">
+                                <i class="fas fa-mountain text-white/40 group-hover:text-cyber-pink transition-colors"></i>
+                            </button>
+                            <button class="vr-spawn-btn group p-2 rounded-lg hover:bg-cyber-green/20 transition-all" data-shape="dna" aria-label="Spawn DNA helix" title="DNA Helix">
+                                <i class="fas fa-dna text-white/40 group-hover:text-cyber-green transition-colors"></i>
+                            </button>
+                            <button class="vr-spawn-btn group p-2 rounded-lg hover:bg-cyber-orange/20 transition-all" data-shape="torus" aria-label="Spawn torus" title="Torus">
+                                <i class="fas fa-ring text-white/40 group-hover:text-cyber-orange transition-colors"></i>
+                            </button>
+                            <button class="vr-spawn-btn group p-2 rounded-lg hover:bg-cyber-gold/20 transition-all" data-shape="star" aria-label="Spawn star" title="Star">
+                                <i class="fas fa-star text-white/40 group-hover:text-cyber-gold transition-colors"></i>
+                            </button>
+                            <div class="border-t border-white/5 pt-2">
+                                <button id="vr-clear-objects" class="group p-2 rounded-lg hover:bg-red-500/20 transition-all w-full" aria-label="Clear all spawned objects" title="Clear All">
+                                    <i class="fas fa-trash-alt text-white/30 group-hover:text-red-400 transition-colors text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Right Sidebar: Camera & Scene Controls -->
+                        <div id="vr-controls" class="absolute top-1/2 -translate-y-1/2 right-4 glass-panel rounded-xl border border-white/10 p-2 flex flex-col gap-2 vr-panel-animate" style="animation-delay: 0.3s">
+                            <span class="text-[8px] font-mono text-white/30 text-center uppercase tracking-widest mb-1">View</span>
+                            <button id="vr-orbit-toggle" class="group p-2 rounded-lg hover:bg-cyber-blue/20 transition-all" aria-label="Toggle orbit mode" title="Auto Orbit">
+                                <i class="fas fa-sync-alt text-white/40 group-hover:text-cyber-blue transition-colors"></i>
+                            </button>
+                            <button id="vr-zoom-in" class="group p-2 rounded-lg hover:bg-cyber-purple/20 transition-all" aria-label="Zoom in" title="Zoom In">
+                                <i class="fas fa-search-plus text-white/40 group-hover:text-cyber-purple transition-colors"></i>
+                            </button>
+                            <button id="vr-zoom-out" class="group p-2 rounded-lg hover:bg-cyber-pink/20 transition-all" aria-label="Zoom out" title="Zoom Out">
+                                <i class="fas fa-search-minus text-white/40 group-hover:text-cyber-pink transition-colors"></i>
+                            </button>
+                            <button id="vr-grid-toggle" class="group p-2 rounded-lg bg-cyber-blue/10 transition-all" aria-label="Toggle grid" title="Toggle Grid">
+                                <i class="fas fa-th text-cyber-blue/60 group-hover:text-cyber-blue transition-colors"></i>
+                            </button>
+                            <button id="vr-particles-toggle" class="group p-2 rounded-lg bg-cyber-green/10 transition-all" aria-label="Toggle particles" title="Toggle Particles">
+                                <i class="fas fa-sparkles text-cyber-green/60 group-hover:text-cyber-green transition-colors"></i>
+                            </button>
+                            <button id="vr-scanlines-toggle" class="group p-2 rounded-lg hover:bg-cyber-orange/20 transition-all" aria-label="Toggle scanlines" title="Scanlines">
+                                <i class="fas fa-bars text-white/40 group-hover:text-cyber-orange transition-colors"></i>
+                            </button>
+                        </div>
+
+                        <!-- Bottom: Full Control Bar -->
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-12 pb-4 px-4">
+                            <div class="flex items-end justify-between gap-4">
+                                <!-- Left: Status -->
+                                <div class="flex items-center gap-3">
+                                    <div class="glass-panel rounded-lg px-3 py-1.5 border border-white/10 flex items-center gap-2">
+                                        <div class="w-2 h-2 rounded-full bg-cyber-green animate-pulse"></div>
+                                        <span class="text-[10px] font-mono text-white/50">WebGL 2.0</span>
+                                    </div>
+                                    <div class="glass-panel rounded-lg px-3 py-1.5 border border-white/10 flex items-center gap-2">
+                                        <i class="fas fa-mouse-pointer text-[10px] text-white/30"></i>
+                                        <span id="vr-mouse-pos" class="text-[10px] font-mono text-white/40">0, 0</span>
+                                    </div>
+                                    <div class="glass-panel rounded-lg px-3 py-1.5 border border-white/10 flex items-center gap-2">
+                                        <i class="fas fa-clock text-[10px] text-white/30"></i>
+                                        <span id="vr-elapsed" class="text-[10px] font-mono text-white/40">00:00</span>
+                                    </div>
+                                </div>
+
+                                <!-- Center: Timeline Scrubber (Simulated Session) -->
+                                <div class="flex-1 max-w-md mx-auto hidden sm:block">
+                                    <div class="glass-panel rounded-xl px-4 py-2 border border-white/10">
+                                        <div class="flex items-center gap-3">
+                                            <button id="vr-play-pause" class="text-white/60 hover:text-white transition-colors" aria-label="Play/pause simulation">
+                                                <i class="fas fa-pause text-xs"></i>
+                                            </button>
+                                            <div class="flex-1 relative h-1 bg-white/10 rounded-full overflow-hidden">
+                                                <div id="vr-timeline-bar" class="absolute left-0 top-0 h-full bg-gradient-to-r from-cyber-pink to-cyber-purple rounded-full transition-all" style="width: 0%"></div>
+                                            </div>
+                                            <span id="vr-timeline-label" class="text-[10px] font-mono text-white/40 min-w-[40px] text-right">0:00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Right: Action Buttons -->
+                                <div class="flex gap-2">
+                                    <button id="vr-screenshot" class="magnetic-btn p-2.5 rounded-xl glass-panel border border-white/10 text-white/50 hover:text-white hover:border-cyber-green/30 transition-all" aria-label="Take screenshot" title="Screenshot">
+                                        <i class="fas fa-camera"></i>
+                                    </button>
+                                    <button id="vr-record" class="magnetic-btn p-2.5 rounded-xl glass-panel border border-white/10 text-white/50 hover:text-white hover:border-red-400/30 transition-all" aria-label="Toggle recording" title="Record">
+                                        <i class="fas fa-circle text-xs"></i>
+                                    </button>
+                                    <button id="vr-fullscreen" class="magnetic-btn p-2.5 rounded-xl glass-panel border border-white/10 text-white/50 hover:text-white hover:border-cyber-blue/30 transition-all" aria-label="Toggle fullscreen" title="Fullscreen">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button id="vr-vr-mode" class="magnetic-btn p-2.5 rounded-xl glass-panel border border-white/10 text-white/50 hover:text-white hover:border-cyber-purple/30 transition-all" aria-label="Enter VR mode" title="VR Mode">
+                                        <i class="fas fa-vr-cardboard"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recording indicator (hidden by default) -->
+                        <div id="vr-recording-indicator" class="absolute top-4 left-1/2 -translate-x-1/2 glass-panel rounded-full px-4 py-1.5 border border-red-500/30 items-center gap-2 hidden">
+                            <div class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></div>
+                            <span class="text-[10px] font-mono text-red-400 uppercase tracking-widest">REC</span>
+                            <span id="vr-rec-timer" class="text-[10px] font-mono text-white/50">00:00</span>
+                        </div>
+                    </div>
+
+                    <!-- VR Feature Cards Row -->
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+                        <div class="glass-panel rounded-2xl border border-white/5 p-4 text-center hover:border-cyber-pink/20 transition-all group" data-animate="fade-up">
+                            <div class="w-12 h-12 rounded-xl bg-cyber-pink/10 border border-cyber-pink/20 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                                <i class="fas fa-hand-pointer text-cyber-pink"></i>
+                            </div>
+                            <h4 class="text-white/80 text-sm font-semibold mb-1">Gesture Control</h4>
+                            <p class="text-white/30 text-xs">Interact with objects using mouse drag & click in real-time</p>
+                        </div>
+                        <div class="glass-panel rounded-2xl border border-white/5 p-4 text-center hover:border-cyber-blue/20 transition-all group" data-animate="fade-up">
+                            <div class="w-12 h-12 rounded-xl bg-cyber-blue/10 border border-cyber-blue/20 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                                <i class="fas fa-users text-cyber-blue"></i>
+                            </div>
+                            <h4 class="text-white/80 text-sm font-semibold mb-1">Multi-Student</h4>
+                            <p class="text-white/30 text-xs">See AI student avatars collaborating in the virtual space</p>
+                        </div>
+                        <div class="glass-panel rounded-2xl border border-white/5 p-4 text-center hover:border-cyber-green/20 transition-all group" data-animate="fade-up">
+                            <div class="w-12 h-12 rounded-xl bg-cyber-green/10 border border-cyber-green/20 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                                <i class="fas fa-globe-americas text-cyber-green"></i>
+                            </div>
+                            <h4 class="text-white/80 text-sm font-semibold mb-1">4 Environments</h4>
+                            <p class="text-white/30 text-xs">Switch between classroom, space, ocean & molecular labs</p>
+                        </div>
+                        <div class="glass-panel rounded-2xl border border-white/5 p-4 text-center hover:border-cyber-purple/20 transition-all group" data-animate="fade-up">
+                            <div class="w-12 h-12 rounded-xl bg-cyber-purple/10 border border-cyber-purple/20 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                                <i class="fas fa-brain text-cyber-purple"></i>
+                            </div>
+                            <h4 class="text-white/80 text-sm font-semibold mb-1">Neural Sync</h4>
+                            <p class="text-white/30 text-xs">Real-time brain wave data overlay with biometric feedback</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ LIVE ANALYTICS SECTION ============ -->
+        <section id="analytics" class="relative z-10 py-24 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div class="text-center mb-16" data-animate="fade-up">
+                    <span class="inline-block px-4 py-1.5 rounded-full bg-cyber-orange/10 border border-cyber-orange/20 text-cyber-orange text-xs font-mono tracking-wider uppercase mb-4">Live Analytics</span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-orbitron font-black mb-4">
+                        Platform <span class="bg-gradient-to-r from-cyber-orange to-cyber-gold bg-clip-text text-transparent">Intelligence</span>
+                    </h2>
+                    <p class="text-white/50 max-w-2xl mx-auto text-lg">Real-time global platform metrics powered by distributed quantum analytics engines.</p>
+                </div>
+
+                <!-- Analytics Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12" data-animate="stagger-up">
+                    <div class="glass-panel rounded-2xl p-6 text-center border border-white/10 hover:border-cyber-blue/30 transition-all group">
+                        <div class="text-4xl lg:text-5xl font-orbitron font-black text-white mb-2 counter" data-target="2.4" data-suffix="M">0</div>
+                        <div class="text-sm text-white/40">Active Learners</div>
+                        <div class="flex justify-center mt-2">
+                            <span class="text-xs text-cyber-green font-mono"><i class="fas fa-arrow-up mr-1"></i>14.2%</span>
+                        </div>
+                    </div>
+                    <div class="glass-panel rounded-2xl p-6 text-center border border-white/10 hover:border-cyber-purple/30 transition-all group">
+                        <div class="text-4xl lg:text-5xl font-orbitron font-black text-white mb-2 counter" data-target="847" data-suffix="K">0</div>
+                        <div class="text-sm text-white/40">AI Sessions/Day</div>
+                        <div class="flex justify-center mt-2">
+                            <span class="text-xs text-cyber-green font-mono"><i class="fas fa-arrow-up mr-1"></i>22.8%</span>
+                        </div>
+                    </div>
+                    <div class="glass-panel rounded-2xl p-6 text-center border border-white/10 hover:border-cyber-green/30 transition-all group">
+                        <div class="text-4xl lg:text-5xl font-orbitron font-black text-white mb-2 counter" data-target="99.9" data-suffix="%">0</div>
+                        <div class="text-sm text-white/40">Uptime</div>
+                        <div class="flex justify-center mt-2">
+                            <span class="text-xs text-cyber-green font-mono"><i class="fas fa-shield-check mr-1"></i>Quantum SLA</span>
+                        </div>
+                    </div>
+                    <div class="glass-panel rounded-2xl p-6 text-center border border-white/10 hover:border-cyber-orange/30 transition-all group">
+                        <div class="text-4xl lg:text-5xl font-orbitron font-black text-white mb-2 counter" data-target="0.003" data-suffix="ms">0</div>
+                        <div class="text-sm text-white/40">AI Response Time</div>
+                        <div class="flex justify-center mt-2">
+                            <span class="text-xs text-cyber-blue font-mono"><i class="fas fa-bolt mr-1"></i>Quantum Speed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Analytics Charts -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6" data-animate="stagger-up">
+                    <!-- Global Activity Map (simulated) -->
+                    <div class="glass-panel rounded-2xl border border-white/10 overflow-hidden">
+                        <div class="px-6 py-4 border-b border-white/5 flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-cyber-blue/10 flex items-center justify-center">
+                                <i class="fas fa-globe text-cyber-blue text-sm"></i>
+                            </div>
+                            <h3 class="text-sm font-semibold text-white/80">Global Neural Activity</h3>
+                            <div class="ml-auto flex items-center gap-2">
+                                <div class="w-2 h-2 rounded-full bg-cyber-green animate-pulse"></div>
+                                <span class="text-xs text-white/40 font-mono">Live</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <canvas id="global-activity-chart" height="250" aria-label="Global activity distribution chart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Performance Metrics -->
+                    <div class="glass-panel rounded-2xl border border-white/10 overflow-hidden">
+                        <div class="px-6 py-4 border-b border-white/5 flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-cyber-purple/10 flex items-center justify-center">
+                                <i class="fas fa-chart-pie text-cyber-purple text-sm"></i>
+                            </div>
+                            <h3 class="text-sm font-semibold text-white/80">Course Distribution</h3>
+                        </div>
+                        <div class="p-6">
+                            <canvas id="course-distribution-chart" height="250" aria-label="Course distribution doughnut chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ BIOMETRIC LOGIN MODAL ============ -->
+        <div id="biometric-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 backdrop-blur-sm" role="dialog" aria-modal="true" aria-label="Biometric Login">
+            <div class="glass-panel rounded-3xl border border-white/10 p-8 max-w-sm w-full mx-4 transform scale-95 opacity-0 transition-all duration-300" id="biometric-modal-content">
+                <div class="text-center">
+                    <h3 class="font-orbitron text-xl font-bold text-white mb-2">Neural Authentication</h3>
+                    <p class="text-white/50 text-sm mb-8">Place your finger on the scanner to begin biometric verification</p>
+
+                    <!-- Fingerprint Scanner -->
+                    <div class="relative w-40 h-40 mx-auto mb-6">
+                        <div class="absolute inset-0 rounded-full border-2 border-cyber-blue/30" id="scan-ring-1"></div>
+                        <div class="absolute inset-3 rounded-full border border-cyber-blue/20" id="scan-ring-2"></div>
+                        <button class="absolute inset-6 rounded-full glass-panel flex items-center justify-center cursor-pointer hover:bg-white/10 transition-colors group" id="fingerprint-scanner" aria-label="Scan fingerprint">
+                            <i class="fas fa-fingerprint text-4xl text-cyber-blue/60 group-hover:text-cyber-blue transition-colors" id="fingerprint-icon"></i>
+                        </button>
+                        <!-- Scan Line -->
+                        <div class="absolute inset-6 rounded-full overflow-hidden pointer-events-none">
+                            <div id="scan-line" class="w-full h-1 bg-gradient-to-r from-transparent via-cyber-blue to-transparent opacity-0 transition-opacity"></div>
+                        </div>
+                    </div>
+
+                    <p class="text-sm font-mono text-white/40 mb-4" id="scan-status">Tap to scan</p>
+                    <div class="w-full h-1.5 bg-white/5 rounded-full overflow-hidden mb-6">
+                        <div class="h-full bg-gradient-to-r from-cyber-blue to-cyber-green rounded-full transition-all duration-500" id="scan-progress" style="width: 0%"></div>
+                    </div>
+
+                    <button class="text-sm text-white/40 hover:text-white/60 transition-colors" id="close-biometric-modal">
+                        <i class="fas fa-times mr-1"></i> Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ==================== IMMERSIVE FOOTER ==================== -->
+    <footer class="relative pt-24 pb-8 overflow-hidden" role="contentinfo">
+        <!-- Footer Glow -->
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-cyber-blue/5 rounded-full blur-[150px]" aria-hidden="true"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Footer Top -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand Column -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="relative w-10 h-10 flex items-center justify-center">
+                            <div class="absolute inset-0 rounded-xl bg-gradient-to-br from-cyber-blue to-cyber-purple"></div>
+                            <span class="relative font-orbitron text-white font-black text-sm">SQ</span>
+                        </div>
+                        <span class="font-orbitron text-lg font-bold bg-gradient-to-r from-cyber-blue to-cyber-purple bg-clip-text text-transparent">SynaptiQX</span>
+                    </div>
+                    <p class="text-white/40 text-sm leading-relaxed mb-6">The world's most advanced neural learning ecosystem. Empowering 2.4M+ learners with AI-driven education since 2042.</p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 rounded-xl glass-panel border border-white/10 flex items-center justify-center text-white/40 hover:text-cyber-blue hover:border-cyber-blue/30 transition-all" aria-label="Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl glass-panel border border-white/10 flex items-center justify-center text-white/40 hover:text-cyber-purple hover:border-cyber-purple/30 transition-all" aria-label="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl glass-panel border border-white/10 flex items-center justify-center text-white/40 hover:text-cyber-pink hover:border-cyber-pink/30 transition-all" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl glass-panel border border-white/10 flex items-center justify-center text-white/40 hover:text-cyber-green hover:border-cyber-green/30 transition-all" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Platform Links -->
+                <div>
+                    <h4 class="font-orbitron text-sm font-bold text-white/80 mb-4 tracking-wider uppercase">Platform</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#courses" class="text-sm text-white/40 hover:text-cyber-blue transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[8px]"></i> Neural Courses</a></li>
+                        <li><a href="#ai-assistant" class="text-sm text-white/40 hover:text-cyber-blue transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[8px]"></i> AI Tutor ARIA</a></li>
+                        <li><a href="#vr-preview" class="text-sm text-white/40 hover:text-cyber-blue transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[8px]"></i> VR Classrooms</a></li>
+                        <li><a href="#dashboard" class="text-sm text-white/40 hover:text-cyber-blue transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[8px]"></i> Analytics Dashboard</a></li>
+                        <li><a href="#" class="text-sm text-white/40 hover:text-cyber-blue transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[8px]"></i> APIs & SDK</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="font-orbitron text-sm font-bold text-white/80 mb-4 tracking-wider uppercase">Resources</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-sm text-white/40 hover:text-cyber-purple transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[8px]"></i> Documentation</a></li>
+                        <li><a href="#" class="text-sm text-white/40 hover:text-cyber-purple transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[8px]"></i> Research Papers</a></li>
+                        <li><a href="#" class="text-sm text-white/40 hover:text-cyber-purple transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[8px]"></i> Community Forum</a></li>
+                        <li><a href="#" class="text-sm text-white/40 hover:text-cyber-purple transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[8px]"></i> Status Page</a></li>
+                        <li><a href="#" class="text-sm text-white/40 hover:text-cyber-purple transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[8px]"></i> Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="font-orbitron text-sm font-bold text-white/80 mb-4 tracking-wider uppercase">Neural Updates</h4>
+                    <p class="text-sm text-white/40 mb-4">Subscribe to get the latest platform updates and AI research breakthroughs.</p>
+                    <form class="flex gap-2" onsubmit="event.preventDefault(); this.querySelector('input').value=''; this.querySelector('.sub-confirm').classList.remove('hidden');">
+                        <input type="email" placeholder="neural@email.com" class="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-white/30 focus:outline-none focus:border-cyber-blue/50 transition-all" required aria-label="Email for newsletter">
+                        <button type="submit" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-cyber-blue to-cyber-purple text-white text-sm font-semibold hover:shadow-[0_0_20px_rgba(0,240,255,0.3)] transition-all" aria-label="Subscribe">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <p class="sub-confirm hidden text-xs text-cyber-green mt-2 font-mono"><i class="fas fa-check-circle mr-1"></i> Neural link established!</p>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-8"></div>
+
+            <!-- Footer Bottom -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="text-sm text-white/30 font-mono">
+                    &copy; 2050 SynaptiQX Technologies. All neural rights reserved.
+                </div>
+                <div class="flex items-center gap-6 text-sm text-white/30">
+                    <a href="#" class="hover:text-white/60 transition-colors">Privacy</a>
+                    <a href="#" class="hover:text-white/60 transition-colors">Terms</a>
+                    <a href="#" class="hover:text-white/60 transition-colors">Cookies</a>
+                    <a href="#" class="hover:text-white/60 transition-colors">Neural Ethics</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="js/particles.js" defer></script>
+    <script src="js/three-scene.js" defer></script>
+    <script src="js/charts.js" defer></script>
+    <script src="js/ai-assistant.js" defer></script>
+    <script src="js/app.js" defer></script>
+</body>
+</html>
